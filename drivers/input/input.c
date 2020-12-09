@@ -29,7 +29,7 @@
 #include <linux/rcupdate.h>
 #include "input-compat.h"
 
-#if !defined(CONFIG_INPUT_BOOSTER) // Input Booster +
+#if !defined(CONFIG_INPUT_BOOSTER) && 0// Input Booster +
 #include <linux/input/input.h>
 #endif // Input Booster -
 
