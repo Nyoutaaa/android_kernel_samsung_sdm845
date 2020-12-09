@@ -867,6 +867,14 @@ config KSWAPD_CPU
 	  Set kswapd cpu affinity by default. 0x3F means allowing CPU as 0 to 5.
 	  To disable this config, set this to 0.
 
+config VM_MAX_READAHEAD
+	int "Default max readahead window size"
+	default 128
+	help
+	  This sets the VM_MAX_READAHEAD value to allow the readahead window
+	  to grow to a maximum size of configured. This will benefit sequential
+	  read throughput and thus early boot performance.
+
 config RBIN
 	bool "RBIN memory support"
 	default n
